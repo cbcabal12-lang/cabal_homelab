@@ -47,6 +47,9 @@ This project demonstrates the deployment, configuration, and management of a loc
 
 * Installed and configured **DHCP** (to assign dynamic IPs to clients) and **DNS** (for domain name resolution).
   <img width="512" height="245" alt="DHCP" src="https://github.com/user-attachments/assets/0ca1d229-c01f-4ce5-9976-f79eed09473c" />
+  <img width="371" height="264" alt="image" src="https://github.com/user-attachments/assets/7d03bb58-253e-4e03-9564-bd9380f8f6ab" />
+
+
 
   
 
