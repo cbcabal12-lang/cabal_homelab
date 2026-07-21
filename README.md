@@ -49,6 +49,11 @@ This project demonstrates the deployment, configuration, and management of a loc
   <img width="512" height="245" alt="DHCP" src="https://github.com/user-attachments/assets/0ca1d229-c01f-4ce5-9976-f79eed09473c" />
   <img width="371" height="264" alt="image" src="https://github.com/user-attachments/assets/7d03bb58-253e-4e03-9564-bd9380f8f6ab" />
 
+### Step 3: User Provisioning and Organization
+* Created specific Organizational Units (OUs) to reflect typical corporate structures namely Management, IT-Staff, and Sales.
+* Populated the OUs with test employee accounts and configured for users to change password at next logon.
+  <img width="660" height="702" alt="image" src="https://github.com/user-attachments/assets/8f4992c5-5328-4990-96e3-161bbb341ccf" />
+
 
 
   
