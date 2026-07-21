@@ -61,7 +61,11 @@ This project demonstrates the deployment, configuration, and management of a loc
 * Modified the client's network adapter to look at `CasLabNetwork` and pointed its primary DNS to the Domain Controller IP. DHCP server also assigned ip address to client computer within the ip address pool(192.168.10.50 to 192.168.10.200) I set up.
   <img width="760" height="614" alt="ipAddress_assigned_desktop" src="https://github.com/user-attachments/assets/2e2406c2-b794-4e6c-8240-cdd7eb84be07" />
 
-* Successfully joined the client endpoint to the `ccabal@txhq.local` domain.
+* Successfully joined the client `ccabal` to the `txhq.local` domain.
+  <img width="696" height="541" alt="image" src="https://github.com/user-attachments/assets/84d0603b-963a-4041-89a1-f58cb55fd7e8" />
+  <img width="640" height="485" alt="confirmed_domain_client" src="https://github.com/user-attachments/assets/c1a368ec-5fca-46a8-8220-7946c9b93758" />
+
+
 
 
 
