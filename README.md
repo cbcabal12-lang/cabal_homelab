@@ -45,8 +45,9 @@ This project demonstrates the deployment, configuration, and management of a loc
 <img width="556" height="269" alt="image" src="https://github.com/user-attachments/assets/9cca5c5b-99d0-48f5-a868-87ed355962fd" />
 
 
-* Installed and configured **DHCP** (to assign dynamic IPs to clients) and **DNS** (for domain name resolution).
-  <img width="512" height="245" alt="DHCP" src="https://github.com/user-attachments/assets/0ca1d229-c01f-4ce5-9976-f79eed09473c" />
+* Installed and configured **DHCP** (to assign dynamic IPs to clients) and **DNS** (for domain name resolution). Setup ip address pool to hand out to client computers.
+  <img width="544" height="298" alt="image" src="https://github.com/user-attachments/assets/f241c1db-125f-4f27-82ff-eb6f480e81d2" />
+
   <img width="371" height="264" alt="image" src="https://github.com/user-attachments/assets/7d03bb58-253e-4e03-9564-bd9380f8f6ab" />
 
 ### Step 3: User Provisioning and Organization
