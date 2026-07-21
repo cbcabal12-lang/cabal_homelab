@@ -57,7 +57,7 @@ This project demonstrates the deployment, configuration, and management of a loc
 * Provisioned a secondary VM running Windows 11 Enterprise.
   <img width="536" height="106" alt="image" src="https://github.com/user-attachments/assets/21e6fcf1-bd57-4208-bfb0-f7e82a9045f0" />
 
-* Modified the client's network adapter to look at `CasLabNetwork` and pointed its primary DNS to the Domain Controller IP.
+* Modified the client's network adapter to look at `CasLabNetwork` and pointed its primary DNS to the Domain Controller IP. DHCP server also assigned ip address to client computer within the ip address pool(192.168.10.50 to 192.168.10.200) I set up.
   <img width="760" height="614" alt="ipAddress_assigned_desktop" src="https://github.com/user-attachments/assets/c890d3d1-cacc-4e30-a179-375af96d82b8" />
 
 
