@@ -50,9 +50,14 @@ This project demonstrates the deployment, configuration, and management of a loc
   <img width="371" height="264" alt="image" src="https://github.com/user-attachments/assets/7d03bb58-253e-4e03-9564-bd9380f8f6ab" />
 
 ### Step 3: User Provisioning and Organization
-* Created specific Organizational Units (OUs) to reflect typical corporate structures namely Management, IT-Staff, and Sales.
-* Populated the OUs with test employee accounts and configured for users to change password at next logon.
+* Created specific Organizational Units (OUs) namely Management, IT-Staff, and Sales. Populated the OUs with test employee accounts and configured for users to change password at next logon.
   <img width="660" height="702" alt="image" src="https://github.com/user-attachments/assets/8f4992c5-5328-4990-96e3-161bbb341ccf" />
+
+### Step 4: Endpoint Management & Domain Join
+* Provisioned a secondary VM running Windows 11 Enterprise.
+  <img width="536" height="106" alt="image" src="https://github.com/user-attachments/assets/21e6fcf1-bd57-4208-bfb0-f7e82a9045f0" />
+
+
 
 
 
