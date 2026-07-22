@@ -67,11 +67,33 @@ This project demonstrates the deployment, configuration, and management of a loc
 
 
 
-  ## Help Desk Ticket Simulations (Hands-On Lab Tasks)
+  ## Security Infrastructure & Least Privilege Verification
 
-  ### 1. User Onboarding Workflow
-* **Objective**: Processed a standard HR hiring ticket to provision a new network identity.
-* **Action**: Logged into the workstation using the restricted `adm-ccabal` account. Provisioned a new user profile for employee "Jane Doe" with a standardized corporate UPN (`jdoe@txhq.local`). 
+### 1. Tier-1 Help Desk Role Customization
+* **Objective**: Restrict Help Desk capabilities to match industry-standard entry-level permissions, preventing unauthorized directory modifications.
+* **Implementation**: Modified the **Delegation of Control Wizard** permissions on the `HQ-Users` parent Organizational Unit. Granted the `HelpDesk-Team` group explicit authority **only** to execute password resets and force password changes at next logon, while completely stripping account creation and deletion capabilities.
+
+### 2. RSAT Deployment Workaround (The Jump Box Method)
+* **Technical Hurdle**: Due to the secure, air-gapped isolation of the laboratory network from the public internet, local native installation of RSAT on the Windows 11 Enterprise client installation failed.
+* **Enterprise Solution**: Pivoted to an industry-standard secure engineering workflow by transforming the Windows Server Domain Controller into a restricted administrative **Management Jump Box**. 
+* **Access Configuration**:
+  1. Configured the server's local security properties to accept incoming connections via **Remote Desktop Protocol (RDP)** explicitly from the `HelpDesk-Team` security group.
+  2. Modified the **Default Domain Controllers Group Policy Object (GPO)** under `User Rights Assignment`, granting the help desk group the specific right to *Allow log on through Remote Desktop Services*.
+  3. Executed `gpupdate /force` via command-line utilities to instantly commit network-wide policy changes.
+
+### 3. Verification & Access Control Audit
+* **Test Path**: Initiated an RDP connection from the Windows 11 Client endpoint to the server host destination (`192.168.10.10`) authenticating as the restricted help desk technician profile.
+* **Results**: 
+  * The technician successfully initiated a remote administrative session and accessed the directory management console.
+  * <img width="1000" height="794" alt="remoteDesktoptoServer" src="https://github.com/user-attachments/assets/24b2aaed-6515-4cab-8bcb-46908a1cfe72" />
+
+  * The technician successfully reset the password of user `Mike Jackson`
+  * <img width="876" height="650" alt="passwordReset" src="https://github.com/user-attachments/assets/8985d843-1cc5-4812-9582-7b6a16e977b6" />
+
+  * **Security Enforcement Test**: Attempting to execute an unauthorized administrative action (such as deleting an asset folder or user account) triggers an instant directory-level blocking event.
+  * <img width="878" height="666" alt="accessDenied" src="https://github.com/user-attachments/assets/170f5d60-5fc0-458b-8384-d93491b1b590" />
+
+
 
 
 
