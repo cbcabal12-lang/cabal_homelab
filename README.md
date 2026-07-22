@@ -110,7 +110,8 @@ This project simulates a secure corporate infrastructure allowing remote employe
 * Disabled Microsoft Secure Boot signatures to allow clean execution of the FreeBSD kernel bootloader.
 * Mapped physical Hyper-V hardware interrupts sequentially to match the OS networking stack interface mapping logic (`hn0` mapped to WAN, `hn1` mapped to LAN).
 
-<img width="1019" height="867" alt="pfsense_console" src="https://github.com/user-attachments/assets/f1df7d62-0641-48f9-a94c-ce4985492595" />
+<img width="1019" height="866" alt="image" src="https://github.com/user-attachments/assets/7b849820-c733-49c5-9b33-4424acd7f88b" />
+
 
 
 
