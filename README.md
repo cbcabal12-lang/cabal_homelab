@@ -112,6 +112,25 @@ This project simulates a secure corporate infrastructure allowing remote employe
 
 <img width="1014" height="864" alt="image" src="https://github.com/user-attachments/assets/969b4063-ffdd-46e3-96c7-69200633a071" />
 
+* Screenshot of pfsense/firewall web gui configured successfully.
+* <img width="1012" height="837" alt="pfsenseWebgui" src="https://github.com/user-attachments/assets/043bae5b-2485-4f80-85f4-1e98cac170e3" />
+
+* Implemented Role-Based Access Control (RBAC) by creating a centralized VPN-Users Global Security Group within Active Directory to govern remote network entry permissions. Added user `Mike Jackson` as VPN user.
+* <img width="654" height="511" alt="vpnUsersGroup" src="https://github.com/user-attachments/assets/5d10b29d-839d-48d1-b045-8bda84aafcfb" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
