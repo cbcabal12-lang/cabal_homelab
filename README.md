@@ -94,6 +94,26 @@ This project demonstrates the deployment, configuration, and management of a loc
   * <img width="878" height="666" alt="accessDenied" src="https://github.com/user-attachments/assets/170f5d60-5fc0-458b-8384-d93491b1b590" />
 
 
+# Enterprise Hybrid Network & Remote Access VPN Lab
+
+## Project Overview
+This project simulates a secure corporate infrastructure allowing remote employees (e.g., traveling on insecure hotel Wi-Fi) to establish an encrypted tunnel back to an internal corporate network using an enterprise gateway firewall and Active Directory authentication.
+
+## Network Topology & Architecture
+* **Corporate LAN Subnet**: `192.168.10.1`
+* **Simulated Internet Transit (DMZ)**: `CoffeeNetwork`
+* **Edge Firewall/Gateway Appliance**: pfSense CE 2.7.2 (FreeBSD 14.0 Core)
+* **Directory Services/Identity Provider**: Windows Server 2022 Active Directory
+
+## Phase 1: Bare-Metal Firewall Implementation
+* Virtualized a Generation 2 UEFI virtual machine with 1 vCPU and 1024MB Static RAM.
+* Disabled Microsoft Secure Boot signatures to allow clean execution of the FreeBSD kernel bootloader.
+* Mapped physical Hyper-V hardware interrupts sequentially to match the OS networking stack interface mapping logic (`hn0` mapped to WAN, `hn1` mapped to LAN).
+
+<img width="1019" height="867" alt="pfsense_console" src="https://github.com/user-attachments/assets/f1df7d62-0641-48f9-a94c-ce4985492595" />
+
+
+
 
 
 
