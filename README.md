@@ -67,6 +67,14 @@ This project demonstrates the deployment, configuration, and management of a loc
 
 
 
+  ## Help Desk Ticket Simulations (Hands-On Lab Tasks)
+
+  ### 1. User Onboarding Workflow
+* **Objective**: Processed a standard HR hiring ticket to provision a new network identity.
+* **Action**: Logged into the workstation using the restricted `adm-ccabal` account. Provisioned a new user profile for employee "Jane Doe" with a standardized corporate UPN (`jdoe@txhq.local`). 
+
+
+
 
 
 
