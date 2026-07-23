@@ -72,6 +72,8 @@ This project demonstrates the deployment, configuration, and management of a loc
 ### 1. Tier-1 Help Desk Role Customization
 * **Objective**: Restrict Help Desk capabilities to match industry-standard entry-level permissions, preventing unauthorized directory modifications.
 * **Implementation**: Modified the **Delegation of Control Wizard** permissions on the `HQ-Users` parent Organizational Unit. Granted the `HelpDesk-Team` group explicit authority **only** to execute password resets and force password changes at next logon, while completely stripping account creation and deletion capabilities.
+* <img width="903" height="634" alt="image" src="https://github.com/user-attachments/assets/19c87f10-7705-433d-83cb-adac1a13099f" />
+
 
 ### 2. RSAT Deployment Workaround (The Jump Box Method)
 * **Technical Hurdle**: Due to the secure, air-gapped isolation of the laboratory network from the public internet, local native installation of RSAT on the Windows 11 Enterprise client installation failed.
@@ -115,11 +117,27 @@ This project simulates a secure corporate infrastructure allowing remote employe
 * Screenshot of pfsense/firewall web gui configured successfully.
 * <img width="1012" height="837" alt="pfsenseWebgui" src="https://github.com/user-attachments/assets/043bae5b-2485-4f80-85f4-1e98cac170e3" />
 
+
+## 🔹 Phase 2: Perimeter Security & Remote Access VPN (In Progress)
+*   **Objective**: Secure the corporate perimeter and provide a hardened, encrypted tunnel for traveling employees using an enterprise gateway.
+*   **Firewall Appliance**: pfSense CE 2.7.2 (FreeBSD 14.0 platform).
+*   **Network Isolation**: Engineered two independent Hyper-V virtual networks (`labnetwork` and `CoffeeNetwork`) to simulate real-world internet isolation.
 * Implemented Role-Based Access Control (RBAC) by creating a centralized VPN-Users Global Security Group within Active Directory to govern remote network entry permissions. Added user `Mike Jackson` as VPN user.
 * <img width="654" height="511" alt="vpnUsersGroup" src="https://github.com/user-attachments/assets/5d10b29d-839d-48d1-b045-8bda84aafcfb" />
 
 * Pfsense successfully authenticated user `Mike Jackson`.
 * <img width="595" height="587" alt="pfsenseAuthSuccess" src="https://github.com/user-attachments/assets/7f72a6e6-bceb-48a7-b749-7b301b421b75" />
+
+## 🧪 Phase 2.5: Operational Baseline & Negative Testing
+Before establishing the cryptographic tunnel framework, a negative validation test was executed to confirm network isolation boundaries.
+
+* **Client State**: Workstation relocated to `CoffeeNetwork` transit environment (`203.0.113.50`).
+* **Isolation Verification**: Direct packet routing to the internal subnet (`192.168.10.10`) was dropped.
+* **Perimeter Hardening Verification**: ICMP Echo Requests targeting the edge WAN gateway interface (`203.0.113.1`) were cleanly dropped by default pfSense block policies.
+
+
+
+
 
 
 
