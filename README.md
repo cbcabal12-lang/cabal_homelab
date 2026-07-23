@@ -134,7 +134,10 @@ Before establishing the cryptographic tunnel framework, a negative validation te
 * **Client State**: Workstation relocated to `CoffeeNetwork` transit environment (`203.0.113.50`).
 * **Isolation Verification**: Direct packet routing to the internal subnet (`192.168.10.10`) was dropped.
 * **Perimeter Hardening Verification**: ICMP Echo Requests targeting the edge WAN gateway interface (`203.0.113.1`) were cleanly dropped by default pfSense block policies.
-* 
+* <img width="597" height="543" alt="pfsenseBlockPing" src="https://github.com/user-attachments/assets/a1e997ca-1ea9-4b30-8965-22ee0469ac36" />
+
+
+
 
 
 
