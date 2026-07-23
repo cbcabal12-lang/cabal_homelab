@@ -118,6 +118,11 @@ This project simulates a secure corporate infrastructure allowing remote employe
 * Implemented Role-Based Access Control (RBAC) by creating a centralized VPN-Users Global Security Group within Active Directory to govern remote network entry permissions. Added user `Mike Jackson` as VPN user.
 * <img width="654" height="511" alt="vpnUsersGroup" src="https://github.com/user-attachments/assets/5d10b29d-839d-48d1-b045-8bda84aafcfb" />
 
+* Pfsense successfully authenticated user `Mike Jackson`.
+* <img width="595" height="587" alt="pfsenseAuthSuccess" src="https://github.com/user-attachments/assets/7f72a6e6-bceb-48a7-b749-7b301b421b75" />
+
+
+
 
 
 
