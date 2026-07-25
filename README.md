@@ -136,6 +136,23 @@ Before establishing the cryptographic tunnel framework, a negative validation te
 * **Perimeter Hardening Verification**: ICMP Echo Requests targeting the edge WAN gateway interface (`203.0.113.1`) were cleanly dropped by default pfSense block policies.
 * <img width="597" height="543" alt="pfsenseBlockPing" src="https://github.com/user-attachments/assets/a1e997ca-1ea9-4b30-8965-22ee0469ac36" />
 
+## Phase 3: Setting up OpenVPN
+### ⚙️ Objective
+Deploy a highly secure, production-grade OpenVPN Gateway server directly on the edge firewall. This architecture establishes an encrypted transport tunnel across untrusted, isolated public address spaces, leveraging the centralized Active Directory database for live user validation.
+
+### 🛠️ Tunnel & Cryptographic Specifications
+* **VPN Daemon Service**: OpenVPN Community Engine (Bound to WAN interface `203.0.113.1`)
+* **Transport Protocol & Socket**: UDP over Port 1194 (Industry baseline for optimized low-latency data transit)
+* **Cryptographic Cipher Suite**: AES-256-GCM data encryption with SHA256 integrity hashing
+* **Key Exchange Matrix**: Diffie-Hellman Group 14 (2048-bit prime modular exponentiation)
+* **Virtual Tunnel Subnet Allocation**: `10.0.8.0/24` (Isolated routing scope reserved strictly for tunneled remote network endpoints)
+* **Internal Routing Access Layer**: Explicit injection rules pointing to the Corporate LAN backend (`192.168.10.0/24`)
+* OpenVPN connection successfull
+* <img width="586" height="568" alt="image" src="https://github.com/user-attachments/assets/db327200-baed-4c1f-adc3-57580e44ae3f" />
+
+* Showing client ip address and submit. Showing successful ping to `192.168.10.10` Domain Controller. 
+* <img width="586" height="568" alt="image" src="https://github.com/user-attachments/assets/9ae79dfa-d749-423e-ae1b-deb6a02789b0" />
+
 
 
 
