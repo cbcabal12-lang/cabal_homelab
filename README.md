@@ -118,7 +118,7 @@ This project simulates a secure corporate infrastructure allowing remote employe
 * <img width="1012" height="837" alt="pfsenseWebgui" src="https://github.com/user-attachments/assets/043bae5b-2485-4f80-85f4-1e98cac170e3" />
 
 
-## 🔹 Phase 2: Perimeter Security & Remote Access VPN (In Progress)
+## 🔹 Phase 2: Perimeter Security & Remote Access VPN
 *   **Objective**: Secure the corporate perimeter and provide a hardened, encrypted tunnel for traveling employees using an enterprise gateway.
 *   **Firewall Appliance**: pfSense CE 2.7.2 (FreeBSD 14.0 platform).
 *   **Network Isolation**: Engineered two independent Hyper-V virtual networks (`labnetwork` and `CoffeeNetwork`) to simulate real-world internet isolation.
