@@ -151,7 +151,8 @@ Deploy a highly secure, production-grade OpenVPN Gateway server directly on the 
 * <img width="586" height="568" alt="image" src="https://github.com/user-attachments/assets/db327200-baed-4c1f-adc3-57580e44ae3f" />
 
 * Showing client ip address and submit. Showing successful ping to `192.168.10.10` Domain Controller. 
-* <img width="586" height="568" alt="image" src="https://github.com/user-attachments/assets/9ae79dfa-d749-423e-ae1b-deb6a02789b0" />
+* <img width="629" height="735" alt="image" src="https://github.com/user-attachments/assets/cfb6095d-9a72-45f2-ab36-419ac60f7f3a" />
+
 
 
 
