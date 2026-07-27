@@ -65,6 +65,10 @@ This project demonstrates the deployment, configuration, and management of a loc
   <img width="696" height="541" alt="image" src="https://github.com/user-attachments/assets/84d0603b-963a-4041-89a1-f58cb55fd7e8" />
   <img width="640" height="485" alt="confirmed_domain_client" src="https://github.com/user-attachments/assets/c1a368ec-5fca-46a8-8220-7946c9b93758" />
 
+* ServiceNow ticket created
+* <img width="2467" height="818" alt="image" src="https://github.com/user-attachments/assets/3616aa2a-4e6a-4eeb-838f-5d0e2538f993" />
+
+
 
 
   ## Security Infrastructure & Least Privilege Verification
