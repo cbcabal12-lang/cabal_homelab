@@ -99,6 +99,10 @@ This project demonstrates the deployment, configuration, and management of a loc
   * **Security Enforcement Test**: Attempting to execute an unauthorized administrative action (such as deleting an asset folder or user account) triggers an instant directory-level blocking event.
   * <img width="878" height="666" alt="accessDenied" src="https://github.com/user-attachments/assets/170f5d60-5fc0-458b-8384-d93491b1b590" />
 
+  * ServiceNow Ticket
+  * <img width="1915" height="879" alt="image" src="https://github.com/user-attachments/assets/3b7cb62d-bd83-4a26-8d4f-ea49ff2ed453" />
+
+
 
 # Enterprise Hybrid Network & Remote Access VPN Lab
 
