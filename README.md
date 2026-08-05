@@ -1,5 +1,5 @@
 # cabal_homelab
-On-premises Active Directory environment built via VirtualBox simulating a corporate enterprise network.
+On-premises Active Directory environment built via Microsoft Hyper-V simulating a corporate enterprise network.
 
 # On-Premises Active Directory Home Lab
 
@@ -17,7 +17,7 @@ This project demonstrates the deployment, configuration, and management of a loc
 * **Hypervisor**: Microsoft Hyper-V
 * **Directory Server**: Windows Server 2022 (Evaluation ISO)
 * **Client Endpoint**: Windows 11 Pro
-* **Virtual Networking**: VirtualBox Isolated Internal Network (`CasLabNetwork`)
+* **Virtual Networking**: Hyper-V Isolated Internal Network (`CasLabNetwork`)
 
 ## Step-by-Step Implementation
 
