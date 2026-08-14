@@ -1,7 +1,12 @@
-# cabal_homelab
-On-premises Windows server 2022 Active Directory Domain Services(DHCP, DNS, Users&Computers), Firewall & VPN(pfsense), Linux server, Windows 11 client(Domain joined) environment built using Microsoft Hyper-V, simulating a corporate enterprise network.
+# Casimelito Cabal homelab
+Technologies shown in this lab using Microsoft Hyper-V virtualization simulating a enterprise network:
+* On-premises Windows server 2022 Active Directory Domain Services (DHCP, DNS, Users&Computers)
+* Firewall & VPN (pfsense)
+* Linux server (Ubuntu server)
+* Windows 11 client domain joined
+* ServiceNow Helpdesk ticketing system
 
-# On-Premises Active Directory Home Lab
+## On-Premises Active Directory Home Lab
 
 ## Project Overview
 This project demonstrates the deployment, configuration, and management of a localized enterprise network using virtualization software. The lab simulates a realistic corporate environment featuring a dedicated Windows Server Domain Controller managing localized endpoints and user access.
@@ -98,8 +103,7 @@ This project demonstrates the deployment, configuration, and management of a loc
   * <img width="1915" height="879" alt="image" src="https://github.com/user-attachments/assets/3b7cb62d-bd83-4a26-8d4f-ea49ff2ed453" />
 
 
-
-# Enterprise Hybrid Network & Remote Access VPN Lab
+## Enterprise Hybrid Network & Remote Access VPN Lab
 
 ## Project Overview
 This project simulates a secure corporate infrastructure allowing remote employees (e.g., traveling on insecure hotel Wi-Fi) to establish an encrypted tunnel back to an internal corporate network using an enterprise gateway firewall and Active Directory authentication.
@@ -110,7 +114,7 @@ This project simulates a secure corporate infrastructure allowing remote employe
 * **Edge Firewall/Gateway Appliance**: pfSense CE 2.7.2 (FreeBSD 14.0 Core)
 * **Directory Services/Identity Provider**: Windows Server 2022 Active Directory
 
-## Phase 1: Bare-Metal Firewall Implementation
+## Phase 1: Firewall Implementation
 * Virtualized a Generation 2 UEFI virtual machine with 1 vCPU and 1024MB Static RAM.
 * Disabled Microsoft Secure Boot signatures to allow clean execution of the FreeBSD kernel bootloader.
 * Mapped physical Hyper-V hardware interrupts sequentially to match the OS networking stack interface mapping logic (`hn0` mapped to WAN, `hn1` mapped to LAN).
