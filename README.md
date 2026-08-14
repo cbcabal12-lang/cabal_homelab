@@ -74,7 +74,7 @@ This project demonstrates the deployment, configuration, and management of a loc
 * <img width="903" height="634" alt="image" src="https://github.com/user-attachments/assets/19c87f10-7705-433d-83cb-adac1a13099f" />
 
 
-### 2. RSAT Deployment Workaround (The Jump Box Method)
+### 2. RSAT(Remote Server Administration Tools) Deployment Workaround (The Jump Box Method)
 * **Technical Hurdle**: Due to the secure, air-gapped isolation of the laboratory network from the public internet, local native installation of RSAT on the Windows 11 Enterprise client installation failed.
 * **Enterprise Solution**: Pivoted to an industry-standard secure engineering workflow by transforming the Windows Server Domain Controller into a restricted administrative **Management Jump Box**. 
 * **Access Configuration**:
