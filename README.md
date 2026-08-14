@@ -1,5 +1,5 @@
 # cabal_homelab
-On-premises Active Directory environment built via Microsoft Hyper-V simulating a corporate enterprise network.
+On-premises Windows server 2022 Active Directory, Firewall & VPN(pfsense), Linux server, Windows 11 client(Domain joined) environment built using Microsoft Hyper-V, simulating a corporate enterprise network.
 
 # On-Premises Active Directory Home Lab
 
