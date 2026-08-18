@@ -5,6 +5,7 @@ Technologies shown in this lab using Microsoft Hyper-V virtualization simulating
 * Linux server (Ubuntu server)
 * Windows 11 client domain joined
 * ServiceNow Helpdesk ticketing system
+* Small Office Home Office(SOHO) Network
 
 ## On-Premises Active Directory Home Lab
 
@@ -164,7 +165,8 @@ Deploy a highly secure, production-grade OpenVPN Gateway server directly on the 
 + <img width="1907" height="934" alt="image" src="https://github.com/user-attachments/assets/f9d416cb-23c7-4309-bf70-f55725c4d6d7" />
 
 
-
+## Small Office Home Office(SOHO) Network
+* Scenario: Client wants a a secure network for their new business. They have 4 desktop, 1 laptop, 1 network attached storage, 4 security cameras, 2 network printer, and they also want a wifi for the guest.  
 
 
 
