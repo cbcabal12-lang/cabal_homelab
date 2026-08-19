@@ -166,7 +166,7 @@ Deploy a highly secure, production-grade OpenVPN Gateway server directly on the 
 
 
 ## Small Office Home Office(SOHO) Network
-* Scenario: Client wants a a secure network for their new business. They have 4 desktop, 1 laptop, 4 security cameras, 2 network printer, and they also want a wifi for the guest.  
+* Scenario: Client wants a a secure network for their new business. They have 4 desktop, 1 laptop, 4 security cameras, 1 network printer, and they also want a wifi for the guest.  
 
 
 
