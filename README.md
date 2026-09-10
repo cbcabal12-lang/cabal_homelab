@@ -171,7 +171,7 @@ Deploy a highly secure, production-grade OpenVPN Gateway server directly on the 
 * The Plan:
 * Create VLAN for guest, internet of things, and main devices.
 * I will be using a class C ip address 192.168.1.0 and a subnet mask 255.255.255.224 or /27, which will provide 30 usable host per subnetwork and 8 subnetwork total. Three(3) will be used in the existing setup and Five(5) will be reserved for expansion.
-* The following subnetwork ID will be used for this setup: 192.168.1.0/27, 192.168.1.32/27, 192.168.1.64/27
+* The following subnetwork ID will be used for this setup: 192.168.1.0/27 for VLAN10, 192.168.1.32/27 for VLAN20, 192.168.1.64/27 for VLAN30
 
 
   
