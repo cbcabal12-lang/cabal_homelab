@@ -126,7 +126,7 @@ This project simulates a secure corporate infrastructure allowing remote employe
 * <img width="1012" height="837" alt="pfsenseWebgui" src="https://github.com/user-attachments/assets/043bae5b-2485-4f80-85f4-1e98cac170e3" />
 
 
-## 🔹 Phase 2: Perimeter Security & Remote Access VPN
+## Phase 2: Perimeter Security & Remote Access VPN
 *   **Objective**: Secure the corporate perimeter and provide a hardened, encrypted tunnel for traveling employees using an enterprise gateway.
 *   **Firewall Appliance**: pfSense CE 2.7.2 (FreeBSD 14.0 platform).
 *   **Network Isolation**: Engineered two independent Hyper-V virtual networks (`labnetwork` and `CoffeeNetwork`) to simulate real-world internet isolation.
@@ -136,7 +136,7 @@ This project simulates a secure corporate infrastructure allowing remote employe
 * Pfsense successfully authenticated user `Mike Jackson`.
 * <img width="595" height="587" alt="pfsenseAuthSuccess" src="https://github.com/user-attachments/assets/7f72a6e6-bceb-48a7-b749-7b301b421b75" />
 
-## 🧪 Phase 2.5: Operational Baseline & Negative Testing
+## Phase 2.5: Operational Baseline & Negative Testing
 Before establishing the cryptographic tunnel framework, a negative validation test was executed to confirm network isolation boundaries.
 
 * **Client State**: Workstation relocated to `CoffeeNetwork` transit environment (`203.0.113.50`).
@@ -145,10 +145,10 @@ Before establishing the cryptographic tunnel framework, a negative validation te
 * <img width="597" height="543" alt="pfsenseBlockPing" src="https://github.com/user-attachments/assets/a1e997ca-1ea9-4b30-8965-22ee0469ac36" />
 
 ## Phase 3: Setting up OpenVPN
-### ⚙️ Objective
+### Objective
 Deploy a highly secure, production-grade OpenVPN Gateway server directly on the edge firewall. This architecture establishes an encrypted transport tunnel across untrusted, isolated public address spaces, leveraging the centralized Active Directory database for live user validation.
 
-### 🛠️ Tunnel & Cryptographic Specifications
+### Tunnel & Cryptographic Specifications
 * **VPN Daemon Service**: OpenVPN Community Engine (Bound to WAN interface `203.0.113.1`)
 * **Transport Protocol & Socket**: UDP over Port 1194 (Industry baseline for optimized low-latency data transit)
 * **Cryptographic Cipher Suite**: AES-256-GCM data encryption with SHA256 integrity hashing
